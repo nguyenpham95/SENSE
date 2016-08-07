@@ -1,0 +1,130 @@
+﻿*{
+    font-family: Montserrat;
+}
+body {
+    font-family: Montserrat;
+}
+.bm_header{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    background-image: url("../img/slider1.jpg");
+}
+.dff{
+    font-family: Montserrat;
+}
+.ff2{
+    font-family: Merriweather;
+}
+.bm_dff{
+    font-family: Montserrat;
+    font-size: 1em;
+}
+.bm_header_text{
+    font-size: 3.6em;
+    font-weight: 600;
+    color: white;
+}
+.bm_subheader_text{
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #bdc3c7;
+    line-height: 2em;
+}
+.bm_logo{
+    height:130%;
+    float:left;
+    margin-top: -10%;
+    position: relative;
+}
+.bm_header2_text{
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #34495e;
+}
+.bm_tab{
+    padding: 10px 20px 10px 20px;
+    font-family: Merriweather;
+    font-size:1.3em;
+    line-height: 1.5em;
+    border:2px solid #7cc576;
+    transition: background-color ease-in-out 0.3s;
+    margin-top: 10px;
+    margin-right:-6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.bm_tab:hover{
+    background-color: rgb(124,197,118);
+    color: white;
+}
+.bm_tab_active{
+    padding: 10px 20px 10px 20px;
+    font-family: Merriweather;
+    font-size:1.3em;
+    line-height: 1.5em;
+    border:2px solid #7cc576;
+    transition: background-color ease-in-out 0.3s;
+    background-color: rgb(124,197,118);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right:-6px;
+    cursor: pointer;
+}
+.bm_tab_active:hover{
+    background-color: rgb(124,197,118);
+    color: white;
+}
+.bm_book_context{
+    width: 100%;
+    float: left;   
+}
+#context1{
+    display: block;
+    margin-top: 0px;
+}
+#context2{
+    display: none;
+    margin-top: 20px;
+}
+#context3{
+    display: none;
+    margin-top: 20px;
+}
+.bm_book-preview{
+    width: 90%;
+    position: absolute;
+    display: block;
+    margin-left: 0px;
+    opacity: 1;
+}
+.bm_book-preview2{
+    width: 90%;
+    position:absolute;
+    display: none;
+    margin-left: -10px;
+    opacity:0;
+}
+.bm_book-preview_img
+{
+    max-width: 400px;
+    width: 100%;
+    float: left;
+    position: relative;
+    display:block;
+}
+.margin_bottom40{
+    margin-bottom: 10px;
+}
+.bm_subhead_p{
+    width: 100%;
+    margin-left:0%;
+    display: block;
+    font-size: 1.6em;
+    color: white;
+    font-family: Montserrat;
+    text-align:center;
+    margin-bottom:10px;
+}
+

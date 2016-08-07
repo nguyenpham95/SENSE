@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>    
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="module/landing.js"></script>
+	<title>SENSE, the BME 513</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather" />
+	<link rel="stylesheet" type="text/css" href="css/bukku/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/bukku/bootstrap.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bukku/owl.css">
+	<link rel="stylesheet" type="text/css" href="css/bukku/animate.css">
+	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/bukku/et-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/bukku/tooltip.css">
+	<link rel="stylesheet" type="text/css" href="css/bukku/lightbox.css">
+    <link href="css/main.css" rel="stylesheet" />
+	<link id="main" rel="stylesheet" type="text/css" href="css/bukku/publisher.css">
+    <script src="js/jquery/mainJquery.js"></script>
+    <link href="css/pricingTable2.css" rel="stylesheet" />
+
+    
+</head>
+<body ng-app="myApp" ng-controller="mainCrl">
+<div id="wrapper" class="behind">
+<header>
+	<div class="container bm_header">
+			<div class="col-md-6 col-sm-12 wow animated fadeInUp">
+				<div class="intro-book">
+					<img src="img/bm513_hpbd.png" alt="">
+				</div>
+			</div>
+			<div class="col-md-6 intro-text hidden-sm hidden-xs wow animated fadeInUp">
+				<h1 class="bm_dff bm_header_text">What is SENSE?</h1>
+				<h4 class="bm_subheader_text bm_dff">An introduction to BME lab 513 website</h4>
+				<p class="dff">This website provides a robust description about the research directions and academic activities of the BME A1.513 Clinical Laboratory. By registering membership at SENSE, students and researchers can get access to the awesome resources that the website provides.</p>
+                <a href="index.html" class="btn btn-green bm_dff" style="font-size:22px;"><span class="dff"><i class="fa fa-arrow-circle-right" style="margin-right:10px;font-size:24px;"></i>Go To Lab here</span></a>
+				
+			</div>
+	</div>
+</header>
+
+<nav class="navbar navbar-default">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><img src="img/bm513_logo.png" alt="" class="bm_logo"></a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right main-nav">
+				<li><a href="#book" class="scrollto"><span class="dff">Intro</span></a></li>
+				<li><a href="#reviews" class="scrollto"><span class="dff">Members</span></a></li>
+				<li><a href="#contact" class="scrollto"><span class="dff">Contact</span></a></li>
+				<li><a href="index.html" class="btn btn-green"><span class="dff">Go To Lab</span></a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<section id="book">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+                <div class="divchua">
+                    <div class="bm_book-preview" id="bm_slider_im1">
+                        <img class="bm_book-preview_img" src="img/imslider/bm_lab.jpg" />
+                    </div>
+                </div>			
+			</div>
+			<div class="col-md-7">
+                <h2 class="heading wow animated fadeInUp"><span class="dff bm_header2_text">WELCOME TO SENSE</span></h2>
+                <a class="bm_tab_active" id="bm_btn_labFunc"><span class="dff">Lab functions</span></a>
+                <a class="bm_tab" id="bm_btn_p4"><span class="dff">P4 system</span></a>
+                <a class="bm_tab" id="bm_btn_wearable"><span class="dff">Wearable</span></a>
+                <div class="bm_book_context" id="context1">
+                    <p class="small wow animated fadeInUp"><span class="ff2">Based on these orientations, the core research topics of our lab focus on developing framework for the diagnosis and treatment of personalized predictive of disorders in the emerging point-of-care (POC) clinical contexts. Such an framework are progressed in three consequence directions:</span></p>
+                    <p class="small wow animated fadeInUp"><span class="ff2">1) Point on care devices for bio-signal monitoring</span></p>
+                    <p class="small wow animated fadeInUp"><span class="ff2">2) Predictive analytics methods for real-time and personalized diagnosis and  prediction of impending disorder episodes</span></p>
+                    <p class="small wow animated fadeInUp"><span class="ff2">3) Preventive treatment and intervention</span></p>
+                </div>		
+                <div class="bm_book_context" id="context2">
+                    <p class="small wow animated fadeInUp"><span class="ff2">One of the most common goals in healthcare for the next decade is the transformation from reactive damage control to proactive and personalized wellness. A new P4 medicine -Prediction, Prevention, Personalization, and Participation- based on integrating the concepts of a systems approach to diseases, emerging technologies, and advanced analytical tools, provides a personal basis for healthcare delivery to maximize wellness for each individual rather than treating diseases. It has been shown in the last 5 years that P4 system has significantly improved the way cancer is diagnosed and treated. The realization of the P4 system in healthcare enables early personalized diagnosis, real-time prognosis, especially for at-risk (e.g., critical care) populations, which can significantly lower treatment cost and reduce mortality and morbidity risks.</span></p>
+                </div>	
+                <div class="bm_book_context" id="context3">
+                    <p class="small wow animated fadeInUp"><span class="ff2">Big data and advanced biosensors has driven the transforming in health studies from the population-based healthcare to personalized wellness paradigm. Such trend has accelerated the use of wearable monitoring systems integrated with advanced data analytic methods to support physician to provide better diagnosis and treatment. Hence, the testing and benchmarking the performance of the devices/ system or analytics methods for clinical applications has become required procedure. Towards this direction, the clinical engineering lab is devoted for research from in vitro settings (on simulated model) to in vivo settings (online databases) and on human subjects. The purposes are to: assess the performance of the designed biomedical system or healthcare informatics methods under different operating settings, benchmark the performance of the proposed research with well-established ground truths or approved clinical procedures, and conducting extensive clinical trial with the consultant from clinical experts.</span></p>
+                </div>	
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="call-to-action">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center wow animated fadeInUp">
+                <h2 class="heading wow animated fadeInUp margin_bottom40"><span class="dff bm_header2_text">RESEARCH DIRECTIONS</span></h2>
+                <p class="bm_subhead_p">At SENSE we focus on the following 3 research directions</p>
+			</div>
+            <div class="wrap">
+                <div class="pricing-table">
+                    <div class="plan">
+                        <h3 class="name"><span class="dff">Diagnosis technique</span></h3>
+                        <h4 class="price"><span class="dff">Making wearable devices to monitor and diagnose diseases</span></h4>
+
+                        <ul class="details">
+                            <li><span class="ff2">Basic electronic system</span></li>
+                            <li><span class="ff2">Design hardware</span></li>
+                            <li><span class="ff2">Develop application</span></li>
+                        </ul>
+
+                        <h5 class="order"><a href="index.html#/projects"><span class="dff">Learn more</span></a></h5>
+                    </div><!--.plan-->
+
+                    <div class="plan">
+                        <h3 class="name"><span class="dff">Predictive analysis</span></h3>
+                        <h4 class="price"><span class="dff">Developing algorithm to describe disease's dynamical processes</span></h4>
+
+                        <ul class="details">
+                            <li><span class="ff2">Data mining</span></li>
+                            <li><span class="ff2">Machine learning</span></li>
+                            <li><span class="ff2">Time series analysis</span></li>
+                        </ul>
+
+                        <h5 class="order"><a href="index.html#/projects"><span class="dff">Learn more</span></a></h5>
+                    </div><!--.plan-->
+
+                    <div class="plan">
+                        <h3 class="name"><span class="dff">Preventive treatment</span></h3>
+                        <h4 class="price"><span class="dff">Provide therapeutic treatment before the clinical symptoms occure</span></h4>
+
+                        <ul class="details">
+                            <li><span class="ff2">Disease physiology</span></li>
+                            <li><span class="ff2">Basic medicine</span></li>
+                            <li><span class="ff2">Therapeutic technique</span></li>
+                        </ul>
+
+                        <h5 class="order"><a href="index.html#/projects"><span class="dff">Learn more</span></a></h5>
+                    </div><!--.plan-->
+                </div><!--.pricing-table-->
+            </div><!--.wrap-->
+		</div>
+	</div>
+</section>
+
+<section id="reviews" class="reviews">
+	<div class="container">
+		<div class="row">	
+			<div class="col-sm-6 text-left">
+				<h2 class="heading" style="font-family: Montserrat;">Members at SENSE</h2>
+			</div>
+			<div class="col-sm-6 text-right text-left-mobile">
+				<div class="rate-amount text-right">
+					
+				</div>
+				<div class="rating">
+					<span class="rate active"></span>
+					<span class="rate active"></span>
+					<span class="rate active"></span>
+					<span class="rate active"></span>
+					<span class="rate"></span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="owl-reviews">
+				<div class="item" ng-repeat="lh in labheads">
+					<div class="review text-center wow animated fadeInUp">
+						<img src="{{lh.ava}}" class="reviewer-pic" alt="" style="width:120px;height:120px;margin:auto;border-radius:120px;">
+						<h5 class="subheading reviewer-name" style="font-family: Montserrat;font-size:22px;">{{lh.fullname}}</h5>
+						<h7 class="subheading muted reviewer-city" style="font-family: Montserrat;margin-top:-10px;margin-bottom:10px;font-size:16px;">{{lh.type}}</h7>
+						<div class="rating" style="margin-top:-20px;margin-bottom:10px;">
+							<span class="rate active"></span>
+							<span class="rate active"></span>
+							<span class="rate active"></span>
+							<span class="rate active"></span>
+                            <span class="rate active"></span>
+						</div>
+						<a href="index.html#/profiles/{{lh.link}}" style="font-family: Montserrat;width:80%;height:42px;display:inline-block;text-align:center;font-size:16px;color:white;margin:auto;background-color:green;line-height:42px;border-radius:10px;">View Profile</a>
+					</div>
+				</div>
+                <div class="item" ng-repeat="m in users">
+                    <div class="review text-center wow animated fadeInUp">
+                        <img src="{{m.ava}}" class="reviewer-pic" alt="" style="width:120px;height:120px;margin:auto;border-radius:120px;">
+                        <h5 class="subheading reviewer-name" style="font-family: Montserrat;font-size:22px;">{{m.fullname}}</h5>
+                        <h7 class="subheading muted reviewer-city" style="font-family: Montserrat;margin-top:-10px;margin-bottom:10px;font-size:16px; line-height:24px;">{{m.type}}</h7><br />
+                        <div class="rating" style="margin-top:-20px;margin-bottom:10px;">
+                            <span class="rate active"></span>
+                            <span class="rate active"></span>
+                            <span class="rate active"></span>
+                            <span class="rate active"></span>
+                            <span class="rate active"></span>
+                        </div><br />
+                        <a href="index.html#/profiles/{{m.link}}" style="font-family: Montserrat;width:80%;height:42px;display:inline-block;text-align:center;font-size:16px;color:white;margin:auto;background-color:green;line-height:42px;border-radius:10px;">View Profile</a>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="call-to-action">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 text-left text-center-mobile wow animated fadeInUp">
+				<h3 class="heading white top-fit" style="font-family: Montserrat;">Subscribe to our Lab</h3>
+				<h5 class="subheading white no-margin" style="font-family: Montserrat;">Join for our new research articles and projects updates</h5>
+			</div>
+			<div class="col-md-4 text-right wow animated fadeInUp text-center-mobile">
+				<a href="index.html" class="btn btn-white sample-button" style="font-family: Montserrat;">Subscribe via email</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="sample-form">
+	<div class="container">
+		<form id="submit-frm" action="php/sampleMail.php" method="post" class="sample-form">
+			<div class="row">
+				<div class="col-sm-5">
+					<input type="text" class="form-control" name="firstname" placeholder="Name" data-validation="required">
+				</div>
+				<div class="col-sm-5">
+					<input type="text" class="form-control" name="email" placeholder="Email" data-validation="email">
+				</div>
+				<div class="col-sm-2">
+					<input type="submit" class="btn btn-green sign-up-button sample-button-done" value="Subscribe">
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 text-left text-center-mobile wow animated fadeInUp contact-details">
+				<h4 class="heading no-margin wow animated fadeInUp" style="font-family: Montserrat;">Contact Us</h4>
+				<h5 class="subheading muted no-margin wow animated fadeInUp" style="font-family: Montserrat;">We would love to see you at our Lab!</h5>
+				<div class="details">
+					<h6 class="heading no-margin" style="font-family: Montserrat;"> Room A1.513 Clinical Lab</h6>
+                    <h6 class="heading no-margin" style="font-family: Montserrat;"> International University - VNU</h6>
+					<p class="small muted wow animated fadeInUp no-margin" style="font-family: Montserrat;"> Đông Hòa, Hồ Chí Minh, Bình Dương, Việt Nam <br>
+				</div>
+				<div class="details" style="font-family: Montserrat;">
+					<h6 class="subheading accent no-margin wow animated fadeInUp" style="font-family: Montserrat;">+84 915 538 938 <br>
+					lequoctrung@gmail.com</h6>
+				</div>
+			</div>
+			<form action="php/newMail.php" method="post" class="mail-form">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-sm-6">
+							<input name="firstname" type="text" class="form-control" placeholder="Name" data-validation="required">
+						</div>
+						<div class="col-sm-6">
+							<input name="email" type="text" class="form-control" placeholder="Email" data-validation="email">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<input name="subject" type="text" class="form-control" placeholder="Subject" data-validation="required">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<textarea name="body" class="form-control" rows="10" placeholder="Message. . ." data-validation="required"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12.text-left">
+							<input type="submit" class="btn btn-green contact-button" value="Send">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 text-left text-center-mobile">
+				<p class="copyright small muted" style="font-family: Montserrat;">Copyright © SENSE Lab 2015 - All rights reserved! Powered with Bukku Template </p>
+			</div>
+			<div class="col-sm-6 text-right text-center-mobile">
+				<div class="social">
+					<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+					<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+					<a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a>
+					<a href="#" class="vine"><i class="fa fa-vine"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</div>
+
+<div class="notification-box"><span>This service is not ready yet</span></div>
+<div class="mobile-nav">
+	<ul class="menu">
+		
+	</ul>
+</div>
+
+<script type="text/javascript">
+
+    
+
+</script>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.onepagenav.js"></script>
+<script src="js/core.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/jquery.form-validator.js"></script>
+<script src="js/preloader.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

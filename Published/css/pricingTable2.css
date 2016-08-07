@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cf:before, .pricing-table:before,
+.cf:after,
+.pricing-table:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.cf:after, .pricing-table:after {
+  clear: both;
+}
+
+.cf, .pricing-table {
+  zoom: 1;
+}
+
+
+strong {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter;
+}
+
+.wrap {
+  width: 900px;
+  margin: auto;
+}
+
+.pricing-table .plan {
+  box-sizing: border-box;
+  width: 300px;
+  background-color: #fff;
+  float: left;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.pricing-table .plan h3.name {
+  font-size: 20px;
+  background-color: #546e7a;
+  padding: 15px;
+  color: #fff;
+}
+.pricing-table .plan h4.price {
+  font-size: 1.3em;
+  color: #fff;
+  padding: 30px 10px 30px 10px;
+  background-color: #01A4F5;
+  line-height: 1.4em;
+}
+.pricing-table .plan ul.details {
+  list-style-type: none;
+}
+.pricing-table .plan ul.details li {
+  border-bottom: 1px solid #B3B9C4;
+  padding: 15px;
+  font-size:1.1em;
+}
+.pricing-table .plan h5.order {
+  padding: 20px;
+  font-size: 17px;
+}
+.pricing-table .plan h5.order a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #01A4F5;
+  padding: 10px 20px;
+  transition: opacity ease-in-out 0.3s;
+}
+.pricing-table .plan h5.order a:hover{
+    opacity: 0.7;
+}
+.pricing-table .plan:first-child h4.price {
+  background-color: #0EC0A5;
+}
+.pricing-table .plan:first-child h5.order a {
+  background-color: #0EC0A5;
+}
+.pricing-table .plan:last-child h4.price {
+  background-color: #F22D47;
+}
+.pricing-table .plan:last-child h5.order a {
+  background-color: #F22D47;
+}
+.pricing-table .plan:nth-child(2n) {
+  box-shadow: 0px 0px 10px #424242;
+  z-index: 100;
+}

@@ -1,0 +1,162 @@
+﻿<section id="main-content">
+    <section class="wrapper">
+
+        <div class="row">
+            <div class="col-lg-9 main-chart">
+                <h1 style="width: 100%; display: inline-block; text-align:center; font-size: 46px;">WELCOME TO SENSE LAB!</h1>
+                <h5 style="width: 100%; display: inline-block; text-align:center;"> Hi there, we wish you find something useful for your work in our website. Have a nice day!</h5>
+                <div class="row mtbox" style="margin-top: 30px; margin-bottom: 10px;">
+
+                    <div class="col-md-2 col-sm-2 col-md-offset-1 box0">
+                        <div class="box1">
+                            <span class="li_heart"></span>
+                            <h3>45</h3>
+                        </div>
+                        <p style="font-size: 16px;">PROFILES</p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 box0">
+                        <div class="box1">
+                            <span class="li_cloud"></span>
+                            <h3>+48</h3>
+                        </div>
+                        <p style="font-size: 16px;">NEW FILES</p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 box0">
+                        <div class="box1">
+                            <span class="li_stack"></span>
+                            <h3>13</h3>
+                        </div>
+                        <p style="font-size: 16px;">PROJECTS</p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 box0">
+                        <div class="box1">
+                            <span class="li_news"></span>
+                            <h3>+100</h3>
+                        </div>
+                        <p style="font-size: 16px;">ARTICLES</p>
+                    </div>
+                    <div class="col-md-2 col-sm-2 box0">
+                        <div class="box1">
+                            <span class="li_data"></span>
+                            <h3>FREE</h3>
+                        </div>
+                        <p style="font-size: 16px;">ACCESS</p>
+                    </div>
+
+                </div><!-- /row mt -->
+
+
+                <div class="row mt" style="margin-top: -20px; margin-bottom: 40px;">
+
+
+
+                    <div class="row mt">
+                        <h4 style="width: 92%; margin-left: 4%; color: #424242; display:inline-block;">RECENT UPLOADS:</h4>
+                        <div style="width: 92%; margin-left: 4%; display: inline-block; border: 1px solid #424242;">
+                            <div class="content-panel">
+                                <table class="table table-striped table-advance table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th><i class="fa fa-user" style="margin-left:4px; margin-right:4px;"></i>  From</th>
+                                            <th class="hidden-phone"><i class="fa fa-paperclip" style="margin-right:4px;"></i>  File name</th>
+                                            <th><i class="fa fa-bookmark" style="margin-right:4px;"></i>  Upload Date</th>
+                                            <th><i class=" fa fa-edit" style="margin-right:4px;"></i>  Status</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="u in uploads">
+                                            <td><a href="basic_table.html#" style="margin-left:4px; color: black;">{{u.authorname}}</a></td>
+                                            <td class="hidden-phone"><b>{{u.filename}}</b></td>
+                                            <td style="font-size: 14px;">{{u.date}}</td>
+                                            <td><span class="label label-info label-mini">{{u.status}}</span></td>
+                                            <td>
+                                                <a href="{{u.link}}"><button class="btn btn-success btn-xs" style="padding: 3px; padding-right: 8px; padding-left: 6px;"><i class="fa fa-chevron-down" style="margin-right: 2px;"></i> Download</button></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div><!-- /content-panel -->
+                        </div><!-- /col-md-12 -->
+                    </div><!-- /row -->
+
+                </div><!-- /row -->
+
+
+                <div class="row">
+                    <! -- TODO PANEL -->
+                    <div class="col-lg-4 col-md-4 col-sm-4 mb">
+                        <div class="steps pn">
+                            <input id='op1' name='op1' type='checkbox' checked />
+                            <label for='op1'>Update Profile</label>
+                            <input id='op2' name='op2' type='checkbox' />
+                            <label for='op2'>Contact Paul</label>
+                            <input id='op3' name='op3' type='checkbox' />
+                            <label for='op3'>Enjoy Life</label>
+                            <input type='submit' value='All Done!' id='submit' />
+                        </div>
+                    </div><! --/col-md-4 -->
+                    
+
+                </div><!-- /row -->
+
+                
+
+            </div><!-- /col-lg-9 END SECTION MIDDLE -->
+            <!-- **********************************************************************************************************************************************************
+            RIGHT SIDEBAR CONTENT
+            *********************************************************************************************************************************************************** -->
+            
+            <div class="col-lg-3 ds" style="border-left: 1px solid #424242;border-bottom: 1px solid #424242;">
+                <!--COMPLETED ACTIONS DONUTS CHART-->
+                <h3>NOTIFICATIONS</h3>
+
+                <!-- First Action -->
+                <div class="desc" ng-repeat="n in notis">
+                    <a style="cursor:pointer;">
+                        <div class="thumb">
+                            <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+                        </div>
+                        <div class="details">
+                            <p>
+                                <muted style="color: black; font-size: 12px;"><b><i>{{n.date}}</i></b></muted><br />
+                                <a href="{{n.link}}" style="font-size: 12px;">{{n.name}}</a><a style="color: black; font-size: 12px; cursor:pointer;" href="{{n.link}}"> {{n.action}}.</a><br />
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- USERS ONLINE SECTION -->
+                <h3>TEAM MEMBERS</h3>
+                <!-- First Member -->
+                <div class="desc" ng-repeat="m in users">
+                    <div class="thumb">
+                        <img class="img-circle" src="{{m.ava}}" width="35px" height="35px" align="">
+                    </div>
+                    <div class="details">
+                        <p>
+                            <a href="#/profiles/{{m.link}}">{{m.fullname}}</a><br />
+                            <muted>{{m.type}}</muted>
+                        </p>
+                    </div>
+                </div>
+                <!--COMPLETED ACTIONS DONUTS CHART-->
+                <h3>LAB HEADS:</h3>
+
+                <div class="desc" ng-repeat="lh in labheads">
+                    <div class="thumb">
+                        <img class="img-circle" src="{{lh.ava}}" width="35px" height="35px" align="">
+                    </div>
+                    <div class="details">
+                        <p>
+                            <a href="#/profiles/{{lh.link}}">{{lh.fullname}}</a><br />
+                            <muted>{{lh.type}}</muted>
+                        </p>
+                    </div>
+                </div>
+
+            </div><!-- /col-lg-3 -->
+        </div><! --/row -->
+    </section>
+</section>

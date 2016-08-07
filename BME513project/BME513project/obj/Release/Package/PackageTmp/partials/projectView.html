@@ -1,0 +1,22 @@
+﻿<section id="main-content">
+    <section class="wrapper site-min-height">
+        <h2 style="width:100%; display:inline-block; text-align:center; margin-bottom: -25px;"> Discover Our Research Projects:</h2>
+        <div class="row mt">
+            <div class="col-lg-12">
+
+                <! -- 1st ROW OF PANELS -->
+
+                <div class="col-lg-4 col-md-4 col-sm-4 mb" ng-repeat="p in projects">
+                    <div class="twitter-panel pn" style="background-color:#16a085;">
+                        <p><img src="{{p.avalink}}" class="img-circle" width="60px" height="60px" style="margin-top:16px;"></p>
+                        <p style="font-size:18px;"><b>{{p.name}}</b></p>
+                        <p><b>By: {{p.authorname}}, advised by: Prof. {{p.advisorname}}</b></p>
+                        <a href="#projects/{{p.id}}" class="btn btn-small btn-theme04">View Project</a>
+                    </div>
+                </div><!-- /col-md-4 -->
+
+                
+            </div>
+        </div>
+    </section><! --/wrapper -->
+</section>

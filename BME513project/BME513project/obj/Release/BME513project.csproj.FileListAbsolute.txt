@@ -1,0 +1,6 @@
+E:\WORK SPACE\SENSE\BME513project\BME513project\bin\BME513project.dll.config
+E:\WORK SPACE\SENSE\BME513project\BME513project\bin\BME513project.dll
+E:\WORK SPACE\SENSE\BME513project\BME513project\bin\BME513project.pdb
+E:\WORK SPACE\SENSE\BME513project\BME513project\obj\Release\BME513project.csprojResolveAssemblyReference.cache
+E:\WORK SPACE\SENSE\BME513project\BME513project\obj\Release\BME513project.dll
+E:\WORK SPACE\SENSE\BME513project\BME513project\obj\Release\BME513project.pdb
